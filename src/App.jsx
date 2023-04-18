@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import "./App.css";
 import Header from "./Header";
+import EmailForm from "./EmailForm";
+import AboutSection from "./AboutSection";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -10,8 +12,9 @@ function App() {
     <div className="App">
       <Header/>
       <main>
-        <h1>DODO Networking</h1>
+<AboutSection/>
       </main>
+        <EmailForm />
     </div>
   );
 }
