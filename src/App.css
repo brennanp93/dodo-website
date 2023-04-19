@@ -16,13 +16,17 @@
   color: white;
 }
 
+.events-box::-webkit-scrollbar {
+  display: none;
+}
 main {
   /* background-color: orange; */
 }
 .about {
-  grid-column: 2/4;
+  padding:10%;
+  grid-column: 1/5;
   grid-row: 3/8;
-  background-image: url(../public/DODO_NOBG.png)
+  background-image: url(../public/DODO_NOBG.png);
   /* color: white; */
 }
 
@@ -35,12 +39,16 @@ header {
 .events-box {
   grid-column: 6/8;
   grid-row: 3/8;
+  border-left: solid white 2px;
+  padding-left: 10%;
+  overflow: scroll;
 }
 
 .event-card {
-  border: solid white 2px;
-  border-radius: 10px;
+  border-bottom: solid white 2px;
+  /* border-top: solid white 2px; */
 }
+
 
 /* .email-form-container {
   display: grid;
