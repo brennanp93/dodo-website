@@ -9,13 +9,15 @@ body {
 
 .App {
   height: 100vh;
-  /* background-color: rgb(251, 107, 30); */
   background-color: #fe6e00;
   display: grid;
   grid-gap: 1%;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
   color: #fedebe;
+  /* background-image: url("/DODO_NOBG.png");
+  background-position: center;
+  background-repeat: no-repeat; */
 }
 
 .events-box::-webkit-scrollbar {
@@ -39,12 +41,13 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   grid-column: 1/9;
-  border-bottom: solid white 2px;
+  border-bottom: solid #fedebe 2px;
   width: 100%;
   font-family: "Bungee", cursive;
-  /* text-align: start; */
-  align-items: center;
   background-color: #fd5602;
 }
 
@@ -68,7 +71,6 @@ footer {
   grid-row: 3/4;
   text-shadow: 0px 6px 7px rgba(0, 0, 0, 0.292);
   font-family: "Bungee", cursive;
-  /* color: rgb(41, 93, 250); */
 }
 .events-box {
   display: flex;
@@ -82,7 +84,6 @@ footer {
   background-color: #fd5602;
   grid-column: 5/8;
   grid-row: 3/8;
-  /* overflow: scroll; */
   height: 60%;
   font-family: "Titillium Web", sans-serif;
 }
@@ -91,7 +92,9 @@ img {
   max-width: 50px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
+}
+@media (max-width: 450px) {
   .App {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -102,24 +105,30 @@ img {
     grid-row: 3/6;
     margin: 0 3% 0 3%;
     height: 75%;
-    font-size: 13px;
+    font-size: 16px;
   }
   .events-box {
     grid-column: 1/4;
     grid-row: 7/8;
     margin: 0 3% 0 3%;
     height: 75%;
-    font-size: 13px;
+    font-size: 16px;
   }
   #about-title {
     margin: 0;
     grid-column: 1/4;
     grid-row: 2/3;
+    font-size: 20px;
   }
   #events-title {
     margin: 0;
     grid-row: auto;
     grid-column: 1/4;
+    font-size: 20px;
+  }
+  header > div {
+    font-size: 15px;
+    margin: 0 1% 0 1%;
   }
   header,
   footer {
