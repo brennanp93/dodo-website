@@ -8,7 +8,7 @@ export default function Footer() {
           </a>
         </div>
         <div id="discord">
-          <a href="https://discord.gg/ucbXSWsF6t">
+          <a href="https://discord.gg/ucbXSWsF6t" target="_blank">
             <img src="/discord.png" alt="" />
           </a>
         </div>
