@@ -3,8 +3,8 @@ export default function UpcomingEvents() {
 
   return (
     <>
+        <h1 id="events-title">Upcoming Events</h1>
       <div className="events-box">
-        <h1>Upcoming Events</h1>
         {events.map((e, idx) => (
           <div className="event-card" ket={idx}>
             <h3>{e.name}</h3>

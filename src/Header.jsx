@@ -1,7 +1,9 @@
 export default function Header() {
   return (
     <header>
-      <h1> Welcome To DODO Netoworking</h1>
+      <div>
+        <h2>Downtown Orange Developers Organization</h2>
+      </div>
     </header>
   );
 }
