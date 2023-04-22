@@ -60,7 +60,7 @@ header,
   text-align: start;
   grid-column: 1/4;
   grid-row: 3/4;
-  border: solid #fedebe 2px;
+  border: solid #fedebe 1px;
   margin: 2%;
   padding: 2%;
   background-color: #fd5602;
@@ -79,7 +79,7 @@ header,
 .events-box {
   grid-column: 1/4;
   grid-row: 5/6;
-  border: solid #fedebe 2px;
+  border: solid #fedebe 1px;
   margin: 2%;
   background-color: #fd5602;
   border-radius: 15px;
