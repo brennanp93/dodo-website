@@ -1,0 +1,91 @@
+/* Color Palette */
+
+body {
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+}
+
+.App {
+  height: 100vh;
+  background-color: #fe6e00;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  color: #fedebe;
+  overflow: scroll;
+}
+
+a {
+  color: #fedebe;
+}
+
+header,
+footer {
+  grid-column: 1/4;
+}
+
+header {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  background-color: #fd5602;
+  border-bottom: solid #fedebe 2px;
+  font-size: 15px;
+}
+
+footer {
+  grid-column: 1/4;
+  grid-row: 10/11;
+  display: flex;
+  justify-content: center;
+}
+img {
+  max-height: 50px;
+}
+
+header,
+#about-title,
+#events-title {
+  font-family: "Bungee", cursive;
+}
+
+#about-title {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  font-size: 20px;
+}
+
+.about {
+  display: flex;
+  text-align: start;
+  grid-column: 1/4;
+  grid-row: 3/6;
+  border: solid #fedebe 2px;
+  margin: 2%;
+  padding: 2%;
+  background-color: #fd5602;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.292);
+  font-family: "Titillium Web", sans-serif;
+  height: 80%;
+  overflow: scroll;
+}
+
+#events-title {
+  grid-column: 1/4;
+  grid-row: 6/7;
+  font-size: 20px;
+}
+
+.events-box {
+  grid-column: 1/4;
+  grid-row: 7/10;
+  border: solid #fedebe 2px;
+  margin: 2%;
+  background-color: #fd5602;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.292);
+  font-family: "Titillium Web", sans-serif;
+  height: 80%;
+  overflow: scroll;
+}

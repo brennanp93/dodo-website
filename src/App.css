@@ -40,8 +40,8 @@ a:hover {
   margin: auto 10% auto 0;
   background-color: #fd5602;
   border-radius: 15px;
-  border: solid rgb(235, 164, 126) 1px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.292);
+  border: solid rgb(235, 164, 126) 1px;
   height: 60%;
   font-family: "Titillium Web", sans-serif;
 }
@@ -92,14 +92,13 @@ footer {
   grid-row: 3/8;
   height: 60%;
   font-family: "Titillium Web", sans-serif;
-  
 }
 
 img {
   max-width: 50px;
 }
 
-@media (max-width: 750px) {
+/* @media (max-width: 750px) {
   .App {
     overflow: scroll;
   }
@@ -158,12 +157,20 @@ img {
   #events-title {
     font-size: 25px;
   }
-}
+} */
 @media (max-width: 450px) {
   .App {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     overflow: scroll;
+  }
+  header > div {
+    font-size: 15px;
+    margin: 0 1% 0 1%;
+  }
+  header,
+  footer {
+    grid-column: 1/4;
   }
   #about-title {
     margin: 0;
@@ -175,7 +182,7 @@ img {
     grid-column: 1/4;
     grid-row: 3/6;
     margin: 0 3% 0% 3%;
-    height: 75%;
+    height: 100%;
     font-size: 13px;
   }
   #events-title {
@@ -190,13 +197,5 @@ img {
     margin: 0 3% 0 3%;
     height: 75%;
     font-size: 14px;
-  }
-  header > div {
-    font-size: 15px;
-    margin: 0 1% 0 1%;
-  }
-  header,
-  footer {
-    grid-column: 1/4;
   }
 }

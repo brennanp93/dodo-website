@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import "./App.css";
+// import "./App.css";
+import "./newApp.css";
 import Header from "./Header";
 import EmailForm from "./EmailForm";
 import AboutSection from "./AboutSection";
