@@ -6,10 +6,10 @@ export default function UpcomingEvents() {
       <div className="events-box">
         {events.map((e, idx) => (
           <div className="event-card" ket={idx}>
-            {/* <h3>{e.name}</h3> */}
-            <h2>When: {e.date}</h2>
-
-            <h2>
+            <h3>
+              When: <br /> {e.date}
+            </h3>
+            <h3>
               Where: {e.locationName}&nbsp;
               <br />
               <a
@@ -18,7 +18,7 @@ export default function UpcomingEvents() {
               >
                 {e.locationAddress}
               </a>
-            </h2>
+            </h3>
             <p>{e.info}</p>
           </div>
         ))}
