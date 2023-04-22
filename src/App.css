@@ -1,5 +1,4 @@
-/* #root {
-} */
+/* Color Palette */
 
 body {
   margin: 0;
@@ -93,7 +92,63 @@ img {
   max-width: 50px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 750px) {
+  .App {
+    overflow: scroll;
+  }
+  .App::-webkit-scrollbar {
+    display: none;
+  }
+  .about,
+  .events-box {
+    grid-column: 3/7;
+    margin: 0;
+  }
+  .about {
+    grid-row: 3/6;
+    overflow: scroll;
+    padding-top: 9%;
+  }
+  .about::-webkit-scrollbar{
+    display: none;
+  }
+  .events-box {
+    grid-row: 6/9;
+  }
+  #about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    grid-column: 3/7;
+    grid-row: 2/3;
+    font-size: 20px;
+  }
+  #events-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    grid-row: auto;
+    grid-column: 3/7;
+    grid-row: 5/6;
+    font-size: 20px;
+  }
+  footer {
+    margin-top: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .about,
+  .events-box {
+    font-size: 14px;
+  }
+  #about-title {
+    font-size: 25px;
+  }
+  #events-title {
+    font-size: 25px;
+  }
 }
 @media (max-width: 450px) {
   .App {
