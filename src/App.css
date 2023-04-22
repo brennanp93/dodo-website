@@ -18,7 +18,13 @@ body {
   background-position: center;
   background-repeat: no-repeat; */
 }
+a {
+  color: #fedebe;
+}
 
+a:hover {
+  font-style: italic;
+}
 .events-box::-webkit-scrollbar {
   display: none;
 }
@@ -86,6 +92,7 @@ footer {
   grid-row: 3/8;
   height: 60%;
   font-family: "Titillium Web", sans-serif;
+  
 }
 
 img {
@@ -105,15 +112,17 @@ img {
     margin: 0;
   }
   .about {
-    grid-row: 3/6;
+    grid-row: 3/5;
+    grid-column:2/8 ;
     overflow: scroll;
-    padding-top: 9%;
-  }
-  .about::-webkit-scrollbar{
+    font-size: 15px;
+    }
+  .about::-webkit-scrollbar {
     display: none;
   }
   .events-box {
     grid-row: 6/9;
+    grid-column:2/8 ;
   }
   #about-title {
     display: flex;
@@ -156,31 +165,31 @@ img {
     grid-template-rows: auto;
     overflow: scroll;
   }
-  .about {
-    grid-column: 1/4;
-    grid-row: 3/6;
-    margin: 0 3% 0 3%;
-    height: 75%;
-    font-size: 16px;
-  }
-  .events-box {
-    grid-column: 1/4;
-    grid-row: 7/8;
-    margin: 0 3% 0 3%;
-    height: 75%;
-    font-size: 16px;
-  }
   #about-title {
     margin: 0;
     grid-column: 1/4;
     grid-row: 2/3;
     font-size: 20px;
   }
+  .about {
+    grid-column: 1/4;
+    grid-row: 3/6;
+    margin: 0 3% 0% 3%;
+    height: 75%;
+    font-size: 13px;
+  }
   #events-title {
-    margin: 0;
-    grid-row: auto;
+    margin: 5% 0 0 0;
+    grid-row: 6/7;
     grid-column: 1/4;
     font-size: 20px;
+  }
+  .events-box {
+    grid-column: 1/4;
+    grid-row: 7/8;
+    margin: 0 3% 0 3%;
+    height: 75%;
+    font-size: 14px;
   }
   header > div {
     font-size: 15px;
