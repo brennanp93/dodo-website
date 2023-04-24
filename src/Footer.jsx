@@ -12,8 +12,8 @@ export default function Footer() {
             <img src="/discord-orange1.png" alt="discord icon" />
           </a>
         </div>
-        <div id="discord">
-          <a href="mailto:dodo@brennanperez.com" target="_blank">
+        <div id="email">
+          <a href="mailto:dodo@brennanperez.com?subject=DODO%20Inquiry%20" target="_blank">
             <img src="/email.png" alt="email icon" />
           </a>
         </div>
