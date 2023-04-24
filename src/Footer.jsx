@@ -13,7 +13,10 @@ export default function Footer() {
           </a>
         </div>
         <div id="email">
-          <a href="mailto:dodo@brennanperez.com?subject=DODO%20Inquiry%20" target="_blank">
+          <a
+            href="mailto:dodo@brennanperez.com?subject=DODO%20Inquiry%20"
+            target="_blank"
+          >
             <img src="/email.png" alt="email icon" />
           </a>
         </div>
@@ -21,4 +24,3 @@ export default function Footer() {
     </>
   );
 }
-
